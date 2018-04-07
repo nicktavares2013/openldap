@@ -1,14 +1,14 @@
-dn: ou=Peoples,dc=dominio0,dc=local
-ou: Peoples
+dn: ou=Usuarios,dc=dominio,dc=inet
+ou: Usuarios
 objectClass: organizationalUnit
 objectClass: top
 
-dn: ou=Groups,dc=dominio0,dc=local
-ou:  Groups
+dn: ou=Grupos,dc=dominio,dc=inet
+ou:  Grupos
 objectClass: organizationalUnit
 objectClass: top
 
-dn: ou=Computers,dc=dominio0,dc=local
-ou:  Computers
+dn: ou=Servicos,dc=dominio,dc=inet
+ou:  Servicos
 objectClass: organizationalUnit
 objectClass: top

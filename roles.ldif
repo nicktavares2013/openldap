@@ -1,4 +1,4 @@
-dn: cn=Pesquisador,dc=dominio0,dc=local
+dn: cn=Pesquisador,ou=Servicos,dc=dominio,dc=inet
 cn: Pesquisador
 description: Usuario para pesquisas autenticadas no diretorio
 objectClass: organizationalRole
@@ -6,7 +6,7 @@ objectClass: simpleSecurityObject
 objectClass: top
 userPassword: {MD5}F5MpVcmAMa/ZZsja/s+pBQ==
 
-dn: cn=Replicador,dc=dominio0,dc=local
+dn: cn=Replicador,ou=Servicos,dc=dominio,dc=inet
 cn: Replicador
 description: Usuario para replicacao do diretorio
 objectClass: organizationalRole
