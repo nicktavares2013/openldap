@@ -1,0 +1,11 @@
+# para adicionar esse LDIF use o comando: 
+# ldapmodify -QY EXTERNAL -H ldapi:/// -f olcTLS.ldif 
+dn: cn=config
+add: olcTLSCACertificateFile
+olcTLSCACertificateFile: /etc/ssl/openldap/cacert.pem
+-
+add: olcTLSCertificateKeyFile
+olcTLSCertificateKeyFile: /etc/ssl/openldap/ldap.key
+-
+add: olcTLSCertificateFile
+olcTLSCertificateFile: /etc/ssl/openldap/ldap.pem

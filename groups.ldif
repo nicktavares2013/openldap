@@ -1,0 +1,29 @@
+dn: cn=Colaboradores,ou=Grupos,dc=elaborata,dc=lab
+cn: Colaboradores
+gidNumber: 1001
+objectClass: posixGroup
+
+dn: cn=Financeiro,ou=Grupos,dc=elaborata,dc=lab
+cn: Financeiro
+gidNumber: 1002
+objectClass: posixGroup
+
+dn: cn=Comercial,ou=Grupos,dc=elaborata,dc=lab
+cn: Comercial
+gidNumber: 1003
+objectClass: posixGroup
+
+dn: cn=RH,ou=Grupos,dc=elaborata,dc=lab
+cn: RH
+gidNumber: 1004
+objectClass: posixGroup
+
+dn: cn=TI,ou=Grupos,dc=elaborata,dc=lab
+cn: TI
+gidNumber: 1005
+objectClass: posixGroup
+
+dn: cn=Diretoria,ou=Grupos,dc=elaborata,dc=lab
+cn: Diretoria
+gidNumber: 1006
+objectClass: posixGroup

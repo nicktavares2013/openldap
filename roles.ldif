@@ -1,0 +1,15 @@
+dn: cn=Pesquisador,dc=dominio0,dc=local
+cn: Pesquisador
+description: Usuario para pesquisas autenticadas no diretorio
+objectClass: organizationalRole
+objectClass: simpleSecurityObject
+objectClass: top
+userPassword: {MD5}F5MpVcmAMa/ZZsja/s+pBQ==
+
+dn: cn=Replicador,dc=dominio0,dc=local
+cn: Replicador
+description: Usuario para replicacao do diretorio
+objectClass: organizationalRole
+objectClass: simpleSecurityObject
+objectClass: top
+userPassword: {MD5}F5MpVcmAMa/ZZsja/s+pBQ==

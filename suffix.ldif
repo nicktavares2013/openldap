@@ -1,0 +1,4 @@
+dn: dc=elaborata,dc=lab
+objectClass: top
+objectClass: domain
+dc: exemplo

@@ -1,0 +1,25 @@
+dn: olcDatabase={1}mdb,cn=config
+changetype: modify
+#Exclui as bases caso jáenham sido criadas, caso contráo comente essas linhas
+#delete: olcAccess
+#-
+add: olcAccess
+olcAccess: {0}to attrs=userPassword,sambaNTPassword,sambaLMPassword,sambaPwdLastSet,sambaPwdMustChange,sambaPasswordHistory by dn.exact="cn=pesquisador,dc=dominio0,dc=local" read by dn.exact="cn=replicador,dc=dominio0,dc=local" read by anonymous auth by self write by * none
+-
+add: olcAccess
+olcAccess: {1}to attrs=shadowLastChange,sambaPwdLastSet,sambaPwdMustChange by dn="cn=pesquisador,dc=dominio0,dc=local" read by dn="cn=replicador,dc=dominio0,dc=local" read by self write by anonymous auth by users read by * none
+-
+add: olcAccess
+olcAccess: {2}to attrs=uidNumber,gidNumber,sambaSID,sambaPrimaryGroupSID,loginShell,homeDirectory by dn="cn=pesquisador,dc=dominio0,dc=local" read by dn="cn=replicador,dc=dominio0,dc=local" read by self read by users read by anonymous auth by * none
+-
+add: olcAccess
+olcAccess: {3}to dn.subtree="ou=Computadores,dc=dominio0,dc=local" by group="cn=Domain Admins,ou=Grupos,dc=dominio0,dc=local" write by group="cn=Account Operators,ou=Grupos,dc=dominio0,dc=local" write by users read by anonymous auth by * none
+-
+add: olcAccess
+olcAccess: {4}to dn.subtree="ou=Contatos,dc=dominio0,dc=local" attrs=uidNumber,gidNumber,uid by * none
+-
+add: olcAccess
+olcAccess: {5}to dn.subtree="ou=Contatos,dc=dominio0,dc=local" by dn="cn=pesquisador,dc=dominio0,dc=local" read by dn="cn=replicador,dc=dominio0,dc=local" read by self write by users write by * none
+-
+add: olcAccess
+olcAccess: {6}to dn.subtree="dc=dominio0,dc=local" by dn.exact="cn=pesquisador,dc=dominio0,dc=local" read by dn.exact="cn=replicador,dc=dominio0,dc=local" read by self write by users read by anonymous auth by * none

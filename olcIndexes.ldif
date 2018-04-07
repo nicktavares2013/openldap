@@ -1,0 +1,49 @@
+dn: olcDatabase={1}mdb,cn=config
+changetype: modify
+replace: olcDbIndex
+olcDbIndex: objectClass eq,pres
+-
+add: olcDbIndex
+olcDbIndex: uid pres,sub,eq
+-
+add: olcDbIndex
+olcDbIndex: cn,mail,surname,givenname eq,subinitial
+-
+add: olcDbIndex
+olcDbIndex: uidNumber eq
+-
+add: olcDbIndex
+olcDbIndex: gidNumber eq
+-
+add: olcDbIndex
+olcDbIndex: dc eq
+-
+add: olcDbIndex
+olcDbIndex: default sub
+-
+add: olcDbIndex
+olcDbIndex: loginShell eq
+-
+add: olcDbIndex
+olcDbIndex: memberUid eq,pres,sub
+-
+add: olcDbIndex
+olcDbIndex: uniqueMember eq,pres
+-
+add: olcDbIndex
+olcDbIndex: displayName eq
+-
+add: olcDbIndex
+olcDbIndex: sambaSID eq
+-
+add: olcDbIndex
+olcDbIndex: sambaPrimaryGroupSID eq
+-
+add: olcDbIndex
+olcDbIndex: sambaGroupType eq
+-
+add: olcDbIndex
+olcDbIndex: sambaSIDList eq
+-
+add: olcDbIndex
+olcDbIndex: sambaDomainName eq

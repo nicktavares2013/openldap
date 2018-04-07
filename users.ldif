@@ -1,0 +1,25 @@
+dn: uid=fulano,ou=Usuarios,dc=elaborata,dc=lab
+cn: Fulano
+userPassword:: e01ENX1JQ3k1WXF4WkIxdVdTd2NWTFNOTGNBPT0=
+sn: de Tal
+givenName: Fulano de Tal
+gidNumber: 1001
+uid: fulano
+uidNumber: 1001
+loginShell: /bin/bash
+homeDirectory: /home/fulano
+objectClass: inetOrgPerson
+objectClass: posixAccount
+
+dn: uid=ciclano,ou=Usuarios,dc=elaborata,dc=lab
+cn: Ciclano
+userPassword:: e01ENX1JQ3k1WXF4WkIxdVdTd2NWTFNOTGNBPT0=
+sn: de Tal
+givenName: Ciclano de Tal
+gidNumber: 1001
+uid: ciclano
+uidNumber: 1002
+loginShell: /bin/bash
+homeDirectory: /home/ciclano
+objectClass: inetOrgPerson
+objectClass: posixAccount
